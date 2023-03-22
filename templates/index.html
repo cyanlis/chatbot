@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Chatbot Demo</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="chat-window">
+    <div class="message-list"></div>
+    <div class="input-area">
+      <textarea id="message-input" placeholder="请输入消息"></textarea>
+      <button id="send-button" type="button">发送</button>
+    </div>
+  </div>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

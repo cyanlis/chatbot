@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.chat-window {
+  width: 400px;
+  overflow-y: scroll;
+  margin: 20px auto;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.message-list {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.message-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.avatar-wrapper {
+  width: 44px;
+  height: 44px;
+  margin-right: 10px;
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.nickname {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.message-bubble {
+  max-width: 80%;
+  word-wrap: break-word;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+}
+
+.message-item-sent .message-bubble {
+  background-color: #dcf8c6;
+}
+
+.input-area {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-top: 1px solid #e0e0e0;
+}
+
+#message-input {
+  flex-grow: 1;
+  resize: none;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+}
+
+#send-button {
+  flex-shrink: 0;
+  margin-left: 10px;
+  padding: 10px;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  background-color: #1890ff;
+  cursor: pointer;
+}
+
+#send-button:hover {
+  background-color: #40a9ff;
+}
+
+#send-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
